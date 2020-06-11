@@ -20,7 +20,7 @@ router.post('/register', async(req, res)=> {
             res.status(201).json({statusCode: '201', body:{message: "new user created"}});
 
         }else{
-            res.status(200).json('this username is already registered, please try other username or login')
+            res.status(200).json('this email is already registered, please try other email or login')
         }
         
     }catch(e){
